@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: mecab
+# Cookbook Name:: cabocha
 # Recipe:: ipadic
 #
 # Copyright 2013, YOUR_COMPANY_NAME

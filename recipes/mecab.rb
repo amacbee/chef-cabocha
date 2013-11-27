@@ -1,6 +1,6 @@
 #
-# Cookbook Name:: mecab
-# Recipe:: default
+# Cookbook Name:: cabocha
+# Recipe:: mecab
 #
 # Copyright 2013, YOUR_COMPANY_NAME
 #
@@ -26,5 +26,3 @@ bash "build_and_install_mecab" do
   EOH
   not_if { ::File.exists?("/usr/local/bin/mecab") }
 end
-
-include_recipe "mecab::ipadic"
