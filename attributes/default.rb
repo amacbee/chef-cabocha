@@ -1,3 +1,6 @@
+default["crf"]["version"] = "0.58"
+default["crf"]["configure_options"] = ""
+
 default["mecab"]["version"] = "0.996"
 default["mecab"]["checksum"] = "15baca0983a61c1a49cffd4a919463a0a39ef127"
 default["mecab"]["configure_options"] = "--with-charset=utf8  --enable-utf8-only"
