@@ -8,3 +8,7 @@ default["mecab"]["configure_options"] = "--with-charset=utf8  --enable-utf8-only
 default["ipadic"]["version"] = "2.7.0-20070801"
 default["ipadic"]["checksum"] = "0d9d021853ba4bb4adfa782ea450e55bfe1a229b"
 default["ipadic"]["configure_options"] = "--with-charset=utf8 --enable-utf8-only"
+
+default["cabocha"]["version"] = "0.66"
+default["cabocha"]["configure_options"] = "--with-charset=utf8 --enable-utf8-only"
+default["cabocha"]["cabocharc"] = "/usr/local/etc/cabocharc"
