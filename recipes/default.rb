@@ -18,7 +18,7 @@ remote_file "#{Chef::Config[:file_cache_path]}/cabocha-#{version}.tar.bz2" do
   mode "0644"
 end
 
-bash "build_and_install_cabocha" do
+bash "Build and Install CaboCha" do
   not_if "which cabocha"
   user "root"
   cwd Chef::Config[:file_cache_path]
@@ -28,12 +28,4 @@ bash "build_and_install_cabocha" do
     (cd cabocha-#{version} && make && make install)
   EOH
   not_if { ::File.exists?("/usr/local/bin/cabocha") }
-end
-
-# FIXME: cabocharcを編集して，文字コードをUTF-8に変更する必要がある
-cabocharc = node["cabocha"]["cabocharc"]
-if ::File.exists?()
-  _cfile = Chef::Util::FileEdit.new("#{cabocharc}")
-  _cfile.search_file_replace_line('^hoge', "piyopiyo\n")
-  _cfile.write_file
 end
