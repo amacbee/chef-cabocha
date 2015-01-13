@@ -1,0 +1,7 @@
+name             'cabocha'
+maintainer       'Ai MAKABI'
+maintainer_email 'a.macbee@gmail.com'
+license          'MIT Licesnce'
+description      'Installs/Configures cabocha'
+long_description 'Installs/Configures cabocha'
+version          '0.1.0'
